@@ -52,5 +52,9 @@
         "**/build": true,
         "**/install": true,
         "**/log": true
-    }
+    },
+    "python.analysis.extraPaths": [
+        "/opt/ros/eloquent/lib/python3.6/site-packages/"
+    ],
+    "python.pythonPath": "/usr/bin/python3"
 }
