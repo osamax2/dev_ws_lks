@@ -22,11 +22,11 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 add_executable(lds_node src/lds_node.cpp)
-target_include_directories(lds_node PUBLIC
+target_include_directories(lds_node mp_node pos_node hlc_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
-install(TARGETS lds_node
+install(TARGETS lds_node mp_node pos_node hlc_node
   EXPORT export_${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME})
 
